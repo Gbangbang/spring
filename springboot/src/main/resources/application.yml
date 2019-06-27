@@ -1,0 +1,26 @@
+#编辑环境的默认值
+spring:
+  profiles:
+    active: prod
+---  #环境分割线
+spring:
+  profiles: dev
+server:
+  port: 8090
+  servlet: 
+    context-path: /
+ #为user属性赋值
+user:
+  id: 100
+  username: 哥斯拉2
+---  #环境分割线
+spring:
+  profiles: prod
+server:
+  port: 8081
+  servlet: 
+    context-path: /jt
+ #为user属性赋值
+user:
+  id: 10000
+  username: 哥斯拉2222
